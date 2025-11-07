@@ -77,7 +77,7 @@
             ''
               # The image has a non deterministic name, so we make it
               # deterministic.
-              cp ${nixos-image'}/iso/*.iso $out
+              ln -vsf ${nixos-image'}/iso/*.iso $out
             '';
       in
       {
